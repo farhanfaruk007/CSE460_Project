@@ -1,0 +1,1010 @@
+Simulator report for fourBitALU
+Sun Apr 16 08:53:44 2023
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 558 nodes    ;
+; Simulation Coverage         ;      52.27 % ;
+; Total Number of Transitions ; 1510         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; FLEX10KE     ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Option                                                                                     ; Setting        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Simulation mode                                                                            ; Functional     ; Timing        ;
+; Start time                                                                                 ; 0 ns           ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF           ;               ;
+; Vector input source                                                                        ; fourBitALU.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
+; Check outputs                                                                              ; Off            ; Off           ;
+; Report simulation coverage                                                                 ; On             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
+; Display missing 1-value coverage report                                                    ; On             ; On            ;
+; Display missing 0-value coverage report                                                    ; On             ; On            ;
+; Detect setup and hold time violations                                                      ; Off            ; Off           ;
+; Detect glitches                                                                            ; Off            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
+; Generate Signal Activity File                                                              ; Off            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      52.27 % ;
+; Total nodes checked                                 ; 558          ;
+; Total output ports checked                          ; 572          ;
+; Total output ports with complete 1/0-value coverage ; 299          ;
+; Total output ports with no 1/0-value coverage       ; 273          ;
+; Total output ports with no 1-value coverage         ; 273          ;
+; Total output ports with no 0-value coverage         ; 273          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                            ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                        ; Output Port Name                                                                 ; Output Port Type ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; |fourBitALU|C~0                                                                  ; |fourBitALU|C~0                                                                  ; out0             ;
+; |fourBitALU|C~3                                                                  ; |fourBitALU|C~3                                                                  ; out0             ;
+; |fourBitALU|C~4                                                                  ; |fourBitALU|C~4                                                                  ; out              ;
+; |fourBitALU|ZF~0                                                                 ; |fourBitALU|ZF~0                                                                 ; out              ;
+; |fourBitALU|SF~0                                                                 ; |fourBitALU|SF~0                                                                 ; out              ;
+; |fourBitALU|C~5                                                                  ; |fourBitALU|C~5                                                                  ; out              ;
+; |fourBitALU|ZF~1                                                                 ; |fourBitALU|ZF~1                                                                 ; out              ;
+; |fourBitALU|SF~1                                                                 ; |fourBitALU|SF~1                                                                 ; out              ;
+; |fourBitALU|C~7                                                                  ; |fourBitALU|C~7                                                                  ; out              ;
+; |fourBitALU|ZF~2                                                                 ; |fourBitALU|ZF~2                                                                 ; out              ;
+; |fourBitALU|SF~2                                                                 ; |fourBitALU|SF~2                                                                 ; out              ;
+; |fourBitALU|C~10                                                                 ; |fourBitALU|C~10                                                                 ; out              ;
+; |fourBitALU|C~13                                                                 ; |fourBitALU|C~13                                                                 ; out              ;
+; |fourBitALU|ZF~3                                                                 ; |fourBitALU|ZF~3                                                                 ; out              ;
+; |fourBitALU|SF~3                                                                 ; |fourBitALU|SF~3                                                                 ; out              ;
+; |fourBitALU|C~14                                                                 ; |fourBitALU|C~14                                                                 ; out              ;
+; |fourBitALU|car~0                                                                ; |fourBitALU|car~0                                                                ; out              ;
+; |fourBitALU|ZF~4                                                                 ; |fourBitALU|ZF~4                                                                 ; out              ;
+; |fourBitALU|SF~4                                                                 ; |fourBitALU|SF~4                                                                 ; out              ;
+; |fourBitALU|CF~0                                                                 ; |fourBitALU|CF~0                                                                 ; out              ;
+; |fourBitALU|SF~reg0                                                              ; |fourBitALU|SF~reg0                                                              ; regout           ;
+; |fourBitALU|C~15                                                                 ; |fourBitALU|C~15                                                                 ; out              ;
+; |fourBitALU|car~1                                                                ; |fourBitALU|car~1                                                                ; out              ;
+; |fourBitALU|ZF~5                                                                 ; |fourBitALU|ZF~5                                                                 ; out              ;
+; |fourBitALU|SF~5                                                                 ; |fourBitALU|SF~5                                                                 ; out              ;
+; |fourBitALU|CF~1                                                                 ; |fourBitALU|CF~1                                                                 ; out              ;
+; |fourBitALU|C~17                                                                 ; |fourBitALU|C~17                                                                 ; out              ;
+; |fourBitALU|car~2                                                                ; |fourBitALU|car~2                                                                ; out              ;
+; |fourBitALU|ZF~6                                                                 ; |fourBitALU|ZF~6                                                                 ; out              ;
+; |fourBitALU|SF~6                                                                 ; |fourBitALU|SF~6                                                                 ; out              ;
+; |fourBitALU|CF~2                                                                 ; |fourBitALU|CF~2                                                                 ; out              ;
+; |fourBitALU|C~20                                                                 ; |fourBitALU|C~20                                                                 ; out              ;
+; |fourBitALU|C~23                                                                 ; |fourBitALU|C~23                                                                 ; out              ;
+; |fourBitALU|car~3                                                                ; |fourBitALU|car~3                                                                ; out              ;
+; |fourBitALU|ZF~7                                                                 ; |fourBitALU|ZF~7                                                                 ; out              ;
+; |fourBitALU|SF~7                                                                 ; |fourBitALU|SF~7                                                                 ; out              ;
+; |fourBitALU|CF~3                                                                 ; |fourBitALU|CF~3                                                                 ; out              ;
+; |fourBitALU|C~24                                                                 ; |fourBitALU|C~24                                                                 ; out0             ;
+; |fourBitALU|C~27                                                                 ; |fourBitALU|C~27                                                                 ; out0             ;
+; |fourBitALU|C~28                                                                 ; |fourBitALU|C~28                                                                 ; out              ;
+; |fourBitALU|SF~8                                                                 ; |fourBitALU|SF~8                                                                 ; out              ;
+; |fourBitALU|C~29                                                                 ; |fourBitALU|C~29                                                                 ; out              ;
+; |fourBitALU|C~30                                                                 ; |fourBitALU|C~30                                                                 ; out              ;
+; |fourBitALU|SF~9                                                                 ; |fourBitALU|SF~9                                                                 ; out              ;
+; |fourBitALU|C~31                                                                 ; |fourBitALU|C~31                                                                 ; out              ;
+; |fourBitALU|C~32                                                                 ; |fourBitALU|C~32                                                                 ; out              ;
+; |fourBitALU|C~33                                                                 ; |fourBitALU|C~33                                                                 ; out              ;
+; |fourBitALU|SF~10                                                                ; |fourBitALU|SF~10                                                                ; out              ;
+; |fourBitALU|C~34                                                                 ; |fourBitALU|C~34                                                                 ; out              ;
+; |fourBitALU|C~35                                                                 ; |fourBitALU|C~35                                                                 ; out              ;
+; |fourBitALU|C~36                                                                 ; |fourBitALU|C~36                                                                 ; out              ;
+; |fourBitALU|C~37                                                                 ; |fourBitALU|C~37                                                                 ; out              ;
+; |fourBitALU|SF~11                                                                ; |fourBitALU|SF~11                                                                ; out              ;
+; |fourBitALU|C~38                                                                 ; |fourBitALU|C~38                                                                 ; out              ;
+; |fourBitALU|car~4                                                                ; |fourBitALU|car~4                                                                ; out              ;
+; |fourBitALU|ZF~12                                                                ; |fourBitALU|ZF~12                                                                ; out              ;
+; |fourBitALU|SF~12                                                                ; |fourBitALU|SF~12                                                                ; out              ;
+; |fourBitALU|CF~4                                                                 ; |fourBitALU|CF~4                                                                 ; out              ;
+; |fourBitALU|C~39                                                                 ; |fourBitALU|C~39                                                                 ; out              ;
+; |fourBitALU|car~5                                                                ; |fourBitALU|car~5                                                                ; out              ;
+; |fourBitALU|count~1                                                              ; |fourBitALU|count~1                                                              ; out              ;
+; |fourBitALU|count~2                                                              ; |fourBitALU|count~2                                                              ; out              ;
+; |fourBitALU|count~3                                                              ; |fourBitALU|count~3                                                              ; out              ;
+; |fourBitALU|ZF~13                                                                ; |fourBitALU|ZF~13                                                                ; out              ;
+; |fourBitALU|SF~13                                                                ; |fourBitALU|SF~13                                                                ; out              ;
+; |fourBitALU|CF~5                                                                 ; |fourBitALU|CF~5                                                                 ; out              ;
+; |fourBitALU|C~41                                                                 ; |fourBitALU|C~41                                                                 ; out              ;
+; |fourBitALU|car~6                                                                ; |fourBitALU|car~6                                                                ; out              ;
+; |fourBitALU|count~5                                                              ; |fourBitALU|count~5                                                              ; out              ;
+; |fourBitALU|count~7                                                              ; |fourBitALU|count~7                                                              ; out              ;
+; |fourBitALU|ZF~14                                                                ; |fourBitALU|ZF~14                                                                ; out              ;
+; |fourBitALU|SF~14                                                                ; |fourBitALU|SF~14                                                                ; out              ;
+; |fourBitALU|CF~6                                                                 ; |fourBitALU|CF~6                                                                 ; out              ;
+; |fourBitALU|C~44                                                                 ; |fourBitALU|C~44                                                                 ; out              ;
+; |fourBitALU|C~47                                                                 ; |fourBitALU|C~47                                                                 ; out              ;
+; |fourBitALU|car~7                                                                ; |fourBitALU|car~7                                                                ; out              ;
+; |fourBitALU|count~9                                                              ; |fourBitALU|count~9                                                              ; out              ;
+; |fourBitALU|count~10                                                             ; |fourBitALU|count~10                                                             ; out              ;
+; |fourBitALU|count~11                                                             ; |fourBitALU|count~11                                                             ; out              ;
+; |fourBitALU|count~12                                                             ; |fourBitALU|count~12                                                             ; out              ;
+; |fourBitALU|ZF~15                                                                ; |fourBitALU|ZF~15                                                                ; out              ;
+; |fourBitALU|SF~15                                                                ; |fourBitALU|SF~15                                                                ; out              ;
+; |fourBitALU|CF~7                                                                 ; |fourBitALU|CF~7                                                                 ; out              ;
+; |fourBitALU|C~48                                                                 ; |fourBitALU|C~48                                                                 ; out              ;
+; |fourBitALU|C~51                                                                 ; |fourBitALU|C~51                                                                 ; out              ;
+; |fourBitALU|count~14                                                             ; |fourBitALU|count~14                                                             ; out              ;
+; |fourBitALU|count~15                                                             ; |fourBitALU|count~15                                                             ; out              ;
+; |fourBitALU|count~16                                                             ; |fourBitALU|count~16                                                             ; out              ;
+; |fourBitALU|count~17                                                             ; |fourBitALU|count~17                                                             ; out              ;
+; |fourBitALU|ZF~16                                                                ; |fourBitALU|ZF~16                                                                ; out              ;
+; |fourBitALU|SF~16                                                                ; |fourBitALU|SF~16                                                                ; out              ;
+; |fourBitALU|C~52                                                                 ; |fourBitALU|C~52                                                                 ; out              ;
+; |fourBitALU|C~55                                                                 ; |fourBitALU|C~55                                                                 ; out              ;
+; |fourBitALU|count~19                                                             ; |fourBitALU|count~19                                                             ; out              ;
+; |fourBitALU|count~20                                                             ; |fourBitALU|count~20                                                             ; out              ;
+; |fourBitALU|count~21                                                             ; |fourBitALU|count~21                                                             ; out              ;
+; |fourBitALU|count~22                                                             ; |fourBitALU|count~22                                                             ; out              ;
+; |fourBitALU|ZF~17                                                                ; |fourBitALU|ZF~17                                                                ; out              ;
+; |fourBitALU|SF~17                                                                ; |fourBitALU|SF~17                                                                ; out              ;
+; |fourBitALU|C~56                                                                 ; |fourBitALU|C~56                                                                 ; out              ;
+; |fourBitALU|C~59                                                                 ; |fourBitALU|C~59                                                                 ; out              ;
+; |fourBitALU|count~24                                                             ; |fourBitALU|count~24                                                             ; out              ;
+; |fourBitALU|count~25                                                             ; |fourBitALU|count~25                                                             ; out              ;
+; |fourBitALU|count~26                                                             ; |fourBitALU|count~26                                                             ; out              ;
+; |fourBitALU|count~27                                                             ; |fourBitALU|count~27                                                             ; out              ;
+; |fourBitALU|ZF~18                                                                ; |fourBitALU|ZF~18                                                                ; out              ;
+; |fourBitALU|SF~18                                                                ; |fourBitALU|SF~18                                                                ; out              ;
+; |fourBitALU|C~60                                                                 ; |fourBitALU|C~60                                                                 ; out              ;
+; |fourBitALU|C~63                                                                 ; |fourBitALU|C~63                                                                 ; out              ;
+; |fourBitALU|count~29                                                             ; |fourBitALU|count~29                                                             ; out              ;
+; |fourBitALU|count~30                                                             ; |fourBitALU|count~30                                                             ; out              ;
+; |fourBitALU|count~31                                                             ; |fourBitALU|count~31                                                             ; out              ;
+; |fourBitALU|count~32                                                             ; |fourBitALU|count~32                                                             ; out              ;
+; |fourBitALU|ZF~19                                                                ; |fourBitALU|ZF~19                                                                ; out              ;
+; |fourBitALU|SF~19                                                                ; |fourBitALU|SF~19                                                                ; out              ;
+; |fourBitALU|count~34                                                             ; |fourBitALU|count~34                                                             ; out              ;
+; |fourBitALU|count~35                                                             ; |fourBitALU|count~35                                                             ; out              ;
+; |fourBitALU|count~36                                                             ; |fourBitALU|count~36                                                             ; out              ;
+; |fourBitALU|count~37                                                             ; |fourBitALU|count~37                                                             ; out              ;
+; |fourBitALU|C~64                                                                 ; |fourBitALU|C~64                                                                 ; out              ;
+; |fourBitALU|C~67                                                                 ; |fourBitALU|C~67                                                                 ; out              ;
+; |fourBitALU|ZF~20                                                                ; |fourBitALU|ZF~20                                                                ; out              ;
+; |fourBitALU|SF~20                                                                ; |fourBitALU|SF~20                                                                ; out              ;
+; |fourBitALU|count~39                                                             ; |fourBitALU|count~39                                                             ; out              ;
+; |fourBitALU|count~40                                                             ; |fourBitALU|count~40                                                             ; out              ;
+; |fourBitALU|count~41                                                             ; |fourBitALU|count~41                                                             ; out              ;
+; |fourBitALU|count~42                                                             ; |fourBitALU|count~42                                                             ; out              ;
+; |fourBitALU|ZF~reg0                                                              ; |fourBitALU|ZF~reg0                                                              ; regout           ;
+; |fourBitALU|C[0]~reg0                                                            ; |fourBitALU|C[0]~reg0                                                            ; regout           ;
+; |fourBitALU|C[3]~reg0                                                            ; |fourBitALU|C[3]~reg0                                                            ; regout           ;
+; |fourBitALU|count.100                                                            ; |fourBitALU|count.100                                                            ; regout           ;
+; |fourBitALU|count.011                                                            ; |fourBitALU|count.011                                                            ; regout           ;
+; |fourBitALU|count.010                                                            ; |fourBitALU|count.010                                                            ; regout           ;
+; |fourBitALU|count.001                                                            ; |fourBitALU|count.001                                                            ; regout           ;
+; |fourBitALU|Clock                                                                ; |fourBitALU|Clock                                                                ; out              ;
+; |fourBitALU|A[0]                                                                 ; |fourBitALU|A[0]                                                                 ; out              ;
+; |fourBitALU|A[1]                                                                 ; |fourBitALU|A[1]                                                                 ; out              ;
+; |fourBitALU|A[2]                                                                 ; |fourBitALU|A[2]                                                                 ; out              ;
+; |fourBitALU|A[3]                                                                 ; |fourBitALU|A[3]                                                                 ; out              ;
+; |fourBitALU|B[1]                                                                 ; |fourBitALU|B[1]                                                                 ; out              ;
+; |fourBitALU|B[2]                                                                 ; |fourBitALU|B[2]                                                                 ; out              ;
+; |fourBitALU|B[3]                                                                 ; |fourBitALU|B[3]                                                                 ; out              ;
+; |fourBitALU|OPcode[2]                                                            ; |fourBitALU|OPcode[2]                                                            ; out              ;
+; |fourBitALU|C[0]                                                                 ; |fourBitALU|C[0]                                                                 ; pin_out          ;
+; |fourBitALU|C[3]                                                                 ; |fourBitALU|C[3]                                                                 ; pin_out          ;
+; |fourBitALU|ZF                                                                   ; |fourBitALU|ZF                                                                   ; pin_out          ;
+; |fourBitALU|SF                                                                   ; |fourBitALU|SF                                                                   ; pin_out          ;
+; |fourBitALU|count~43                                                             ; |fourBitALU|count~43                                                             ; out0             ;
+; |fourBitALU|Equal0~4                                                             ; |fourBitALU|Equal0~4                                                             ; out0             ;
+; |fourBitALU|Equal2~33                                                            ; |fourBitALU|Equal2~33                                                            ; out0             ;
+; |fourBitALU|Equal3~4                                                             ; |fourBitALU|Equal3~4                                                             ; out0             ;
+; |fourBitALU|Equal4~33                                                            ; |fourBitALU|Equal4~33                                                            ; out0             ;
+; |fourBitALU|Equal6~33                                                            ; |fourBitALU|Equal6~33                                                            ; out0             ;
+; |fourBitALU|Equal8~33                                                            ; |fourBitALU|Equal8~33                                                            ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|result_node[0]                                     ; |fourBitALU|lpm_add_sub:Add13|result_node[0]                                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|result_node[1]                                     ; |fourBitALU|lpm_add_sub:Add13|result_node[1]                                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|unreg_res_node[0]~0                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|unreg_res_node[0]                    ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~1                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|unreg_res_node[1]~1                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|unreg_res_node[1]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|unreg_res_node[1]                    ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~5                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~5                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; sout             ;
+; |fourBitALU|lpm_add_sub:Add12|result_node[0]                                     ; |fourBitALU|lpm_add_sub:Add12|result_node[0]                                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|result_node[1]                                     ; |fourBitALU|lpm_add_sub:Add12|result_node[1]                                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[0]                        ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|unreg_res_node[0]~0                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|unreg_res_node[0]                    ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~0                                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~1                                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~3                                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|unreg_res_node[1]                    ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; sout             ;
+; |fourBitALU|lpm_add_sub:Add11|result_node[0]                                     ; |fourBitALU|lpm_add_sub:Add11|result_node[0]                                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|result_node[1]                                     ; |fourBitALU|lpm_add_sub:Add11|result_node[1]                                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|unreg_res_node[0]~0                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|unreg_res_node[0]                    ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~1                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|unreg_res_node[1]~1                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|unreg_res_node[1]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|unreg_res_node[1]                    ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~5                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~5                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; sout             ;
+; |fourBitALU|lpm_add_sub:Add10|result_node[0]                                     ; |fourBitALU|lpm_add_sub:Add10|result_node[0]                                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|result_node[1]                                     ; |fourBitALU|lpm_add_sub:Add10|result_node[1]                                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[0]                        ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|unreg_res_node[0]~0                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|unreg_res_node[0]                    ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~0                                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~1                                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~3                                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|unreg_res_node[1]                    ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; sout             ;
+; |fourBitALU|lpm_add_sub:Add9|result_node[0]                                      ; |fourBitALU|lpm_add_sub:Add9|result_node[0]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|result_node[1]                                      ; |fourBitALU|lpm_add_sub:Add9|result_node[1]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|unreg_res_node[0]~0                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|unreg_res_node[0]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~1                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|unreg_res_node[1]~1                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|unreg_res_node[1]~1                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|unreg_res_node[1]                     ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|unreg_res_node[1]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~5                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~5                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add8|result_node[0]                                      ; |fourBitALU|lpm_add_sub:Add8|result_node[0]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|result_node[1]                                      ; |fourBitALU|lpm_add_sub:Add8|result_node[1]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[0]                         ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|unreg_res_node[0]~0                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|unreg_res_node[0]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~0                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~1                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~3                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|unreg_res_node[1]                     ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|unreg_res_node[1]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|a_csnbuffer:result_node|cout[0]       ; cout             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add7|result_node[0]                                      ; |fourBitALU|lpm_add_sub:Add7|result_node[0]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|unreg_res_node[0]~0                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|unreg_res_node[0]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~1                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add6|result_node[1]                                      ; |fourBitALU|lpm_add_sub:Add6|result_node[1]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|result_node[2]                                      ; |fourBitALU|lpm_add_sub:Add6|result_node[2]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[2]~1                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[2]~1                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[1]~2                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[1]~2                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[2]                     ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[2]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[1]                     ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[1]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~4                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~5                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~5                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add5|result_node[1]                                      ; |fourBitALU|lpm_add_sub:Add5|result_node[1]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|result_node[2]                                      ; |fourBitALU|lpm_add_sub:Add5|result_node[2]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[1]                         ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[1]~2                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[1]~2                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]                     ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[1]                     ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[1]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~5                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~5                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~7                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~9                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~9                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~11                                  ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~11                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cout[1]       ; cout             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add4|result_node[1]                                      ; |fourBitALU|lpm_add_sub:Add4|result_node[1]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|result_node[2]                                      ; |fourBitALU|lpm_add_sub:Add4|result_node[2]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[2]~1                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[2]~1                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[1]~2                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[1]~2                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[2]                     ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[2]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[1]                     ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[1]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~4                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~5                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~5                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add3|result_node[1]                                      ; |fourBitALU|lpm_add_sub:Add3|result_node[1]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|result_node[2]                                      ; |fourBitALU|lpm_add_sub:Add3|result_node[2]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[1]                         ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[1]~2                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[1]~2                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]                     ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[1]                     ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[1]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~5                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~5                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~7                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~9                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~9                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~11                                  ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~11                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cout[1]       ; cout             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add2|result_node[1]                                      ; |fourBitALU|lpm_add_sub:Add2|result_node[1]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|result_node[2]                                      ; |fourBitALU|lpm_add_sub:Add2|result_node[2]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]~1                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]~1                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]~2                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]~2                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]                     ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]                     ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~4                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~5                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~5                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add1|result_node[1]                                      ; |fourBitALU|lpm_add_sub:Add1|result_node[1]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|result_node[2]                                      ; |fourBitALU|lpm_add_sub:Add1|result_node[2]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[1]                         ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~2                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~2                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                     ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                     ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~5                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~5                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~7                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~9                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~9                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~11                                  ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~11                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[1]       ; cout             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; sout             ;
+; |fourBitALU|lpm_add_sub:Add0|result_node[1]                                      ; |fourBitALU|lpm_add_sub:Add0|result_node[1]                                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~2                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~2                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                     ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~5                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~5                                   ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; sout             ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                              ;
++----------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; Node Name                                                                        ; Output Port Name                                                                ; Output Port Type ;
++----------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; |fourBitALU|C~1                                                                  ; |fourBitALU|C~1                                                                 ; out0             ;
+; |fourBitALU|C~2                                                                  ; |fourBitALU|C~2                                                                 ; out0             ;
+; |fourBitALU|C~6                                                                  ; |fourBitALU|C~6                                                                 ; out              ;
+; |fourBitALU|C~8                                                                  ; |fourBitALU|C~8                                                                 ; out              ;
+; |fourBitALU|C~9                                                                  ; |fourBitALU|C~9                                                                 ; out              ;
+; |fourBitALU|C~11                                                                 ; |fourBitALU|C~11                                                                ; out              ;
+; |fourBitALU|C~12                                                                 ; |fourBitALU|C~12                                                                ; out              ;
+; |fourBitALU|C~16                                                                 ; |fourBitALU|C~16                                                                ; out              ;
+; |fourBitALU|C~18                                                                 ; |fourBitALU|C~18                                                                ; out              ;
+; |fourBitALU|C~19                                                                 ; |fourBitALU|C~19                                                                ; out              ;
+; |fourBitALU|C~21                                                                 ; |fourBitALU|C~21                                                                ; out              ;
+; |fourBitALU|C~22                                                                 ; |fourBitALU|C~22                                                                ; out              ;
+; |fourBitALU|C~25                                                                 ; |fourBitALU|C~25                                                                ; out0             ;
+; |fourBitALU|C~26                                                                 ; |fourBitALU|C~26                                                                ; out0             ;
+; |fourBitALU|ZF~8                                                                 ; |fourBitALU|ZF~8                                                                ; out              ;
+; |fourBitALU|ZF~9                                                                 ; |fourBitALU|ZF~9                                                                ; out              ;
+; |fourBitALU|ZF~10                                                                ; |fourBitALU|ZF~10                                                               ; out              ;
+; |fourBitALU|ZF~11                                                                ; |fourBitALU|ZF~11                                                               ; out              ;
+; |fourBitALU|C~40                                                                 ; |fourBitALU|C~40                                                                ; out              ;
+; |fourBitALU|count~0                                                              ; |fourBitALU|count~0                                                             ; out              ;
+; |fourBitALU|C~42                                                                 ; |fourBitALU|C~42                                                                ; out              ;
+; |fourBitALU|C~43                                                                 ; |fourBitALU|C~43                                                                ; out              ;
+; |fourBitALU|count~4                                                              ; |fourBitALU|count~4                                                             ; out              ;
+; |fourBitALU|count~6                                                              ; |fourBitALU|count~6                                                             ; out              ;
+; |fourBitALU|C~45                                                                 ; |fourBitALU|C~45                                                                ; out              ;
+; |fourBitALU|C~46                                                                 ; |fourBitALU|C~46                                                                ; out              ;
+; |fourBitALU|count~8                                                              ; |fourBitALU|count~8                                                             ; out              ;
+; |fourBitALU|C~49                                                                 ; |fourBitALU|C~49                                                                ; out              ;
+; |fourBitALU|C~50                                                                 ; |fourBitALU|C~50                                                                ; out              ;
+; |fourBitALU|car~8                                                                ; |fourBitALU|car~8                                                               ; out              ;
+; |fourBitALU|count~13                                                             ; |fourBitALU|count~13                                                            ; out              ;
+; |fourBitALU|CF~8                                                                 ; |fourBitALU|CF~8                                                                ; out              ;
+; |fourBitALU|C~53                                                                 ; |fourBitALU|C~53                                                                ; out              ;
+; |fourBitALU|C~54                                                                 ; |fourBitALU|C~54                                                                ; out              ;
+; |fourBitALU|count~18                                                             ; |fourBitALU|count~18                                                            ; out              ;
+; |fourBitALU|CF~reg0                                                              ; |fourBitALU|CF~reg0                                                             ; regout           ;
+; |fourBitALU|car~9                                                                ; |fourBitALU|car~9                                                               ; out              ;
+; |fourBitALU|CF~9                                                                 ; |fourBitALU|CF~9                                                                ; out              ;
+; |fourBitALU|C~57                                                                 ; |fourBitALU|C~57                                                                ; out              ;
+; |fourBitALU|C~58                                                                 ; |fourBitALU|C~58                                                                ; out              ;
+; |fourBitALU|car~10                                                               ; |fourBitALU|car~10                                                              ; out              ;
+; |fourBitALU|count~23                                                             ; |fourBitALU|count~23                                                            ; out              ;
+; |fourBitALU|CF~10                                                                ; |fourBitALU|CF~10                                                               ; out              ;
+; |fourBitALU|C~61                                                                 ; |fourBitALU|C~61                                                                ; out              ;
+; |fourBitALU|C~62                                                                 ; |fourBitALU|C~62                                                                ; out              ;
+; |fourBitALU|count~28                                                             ; |fourBitALU|count~28                                                            ; out              ;
+; |fourBitALU|car~11                                                               ; |fourBitALU|car~11                                                              ; out              ;
+; |fourBitALU|CF~11                                                                ; |fourBitALU|CF~11                                                               ; out              ;
+; |fourBitALU|count~33                                                             ; |fourBitALU|count~33                                                            ; out              ;
+; |fourBitALU|C~65                                                                 ; |fourBitALU|C~65                                                                ; out              ;
+; |fourBitALU|C~66                                                                 ; |fourBitALU|C~66                                                                ; out              ;
+; |fourBitALU|CF~12                                                                ; |fourBitALU|CF~12                                                               ; out              ;
+; |fourBitALU|car~12                                                               ; |fourBitALU|car~12                                                              ; out              ;
+; |fourBitALU|count~38                                                             ; |fourBitALU|count~38                                                            ; out              ;
+; |fourBitALU|car                                                                  ; |fourBitALU|car                                                                 ; regout           ;
+; |fourBitALU|C[1]~reg0                                                            ; |fourBitALU|C[1]~reg0                                                           ; regout           ;
+; |fourBitALU|C[2]~reg0                                                            ; |fourBitALU|C[2]~reg0                                                           ; regout           ;
+; |fourBitALU|count.000                                                            ; |fourBitALU|count.000                                                           ; regout           ;
+; |fourBitALU|Reset                                                                ; |fourBitALU|Reset                                                               ; out              ;
+; |fourBitALU|B[0]                                                                 ; |fourBitALU|B[0]                                                                ; out              ;
+; |fourBitALU|OPcode[0]                                                            ; |fourBitALU|OPcode[0]                                                           ; out              ;
+; |fourBitALU|OPcode[1]                                                            ; |fourBitALU|OPcode[1]                                                           ; out              ;
+; |fourBitALU|C[1]                                                                 ; |fourBitALU|C[1]                                                                ; pin_out          ;
+; |fourBitALU|C[2]                                                                 ; |fourBitALU|C[2]                                                                ; pin_out          ;
+; |fourBitALU|CF                                                                   ; |fourBitALU|CF                                                                  ; pin_out          ;
+; |fourBitALU|Equal1~4                                                             ; |fourBitALU|Equal1~4                                                            ; out0             ;
+; |fourBitALU|Equal5~4                                                             ; |fourBitALU|Equal5~4                                                            ; out0             ;
+; |fourBitALU|Equal7~4                                                             ; |fourBitALU|Equal7~4                                                            ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[0]~0                      ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[0]~0                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[0]                        ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[0]                       ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~0                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~0                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~2                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~2                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~3                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~3                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[1]~1                      ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[1]~1                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[1]                        ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[1]                       ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~4                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~4                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~6                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~6                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~7                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~7                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|a_csnbuffer:result_node|cout[0]     ; cout             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[0]~0                      ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[0]~0                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~2                                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~2                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[1]~1                      ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[1]~1                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[1]                        ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[1]                       ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|unreg_res_node[1]~1                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|unreg_res_node[1]~1                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~4                                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~4                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~5                                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~5                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~6                                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~6                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~7                                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~7                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[0]~0                      ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[0]~0                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[0]                        ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[0]                       ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~0                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~0                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~2                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~2                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~3                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~3                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[1]~1                      ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[1]~1                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[1]                        ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[1]                       ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~4                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~4                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~6                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~6                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~7                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~7                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|a_csnbuffer:result_node|cout[0]     ; cout             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[0]~0                      ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[0]~0                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~2                                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~2                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[1]~1                      ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[1]~1                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[1]                        ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[1]                       ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|unreg_res_node[1]~1                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|unreg_res_node[1]~1                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~4                                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~4                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~5                                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~5                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~6                                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~6                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~7                                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~7                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[1]~1                       ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[1]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[1]~1                       ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[1]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|unreg_res_node[1]~1                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|unreg_res_node[1]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~5                                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~5                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|result_node[1]                                      ; |fourBitALU|lpm_add_sub:Add7|result_node[1]                                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[1]~1                       ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[1]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|unreg_res_node[1]~1                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|unreg_res_node[1]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|unreg_res_node[1]                     ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~5                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~5                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~9                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~9                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~11                                  ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~11                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]~1                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~9                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~9                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~11                                  ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~11                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]~1                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~9                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~9                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~11                                  ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~11                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~1                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add0|result_node[2]                                      ; |fourBitALU|lpm_add_sub:Add0|result_node[2]                                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~1                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                     ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~9                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~9                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~11                                  ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~11                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
++----------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                              ;
++----------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; Node Name                                                                        ; Output Port Name                                                                ; Output Port Type ;
++----------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; |fourBitALU|C~1                                                                  ; |fourBitALU|C~1                                                                 ; out0             ;
+; |fourBitALU|C~2                                                                  ; |fourBitALU|C~2                                                                 ; out0             ;
+; |fourBitALU|C~6                                                                  ; |fourBitALU|C~6                                                                 ; out              ;
+; |fourBitALU|C~8                                                                  ; |fourBitALU|C~8                                                                 ; out              ;
+; |fourBitALU|C~9                                                                  ; |fourBitALU|C~9                                                                 ; out              ;
+; |fourBitALU|C~11                                                                 ; |fourBitALU|C~11                                                                ; out              ;
+; |fourBitALU|C~12                                                                 ; |fourBitALU|C~12                                                                ; out              ;
+; |fourBitALU|C~16                                                                 ; |fourBitALU|C~16                                                                ; out              ;
+; |fourBitALU|C~18                                                                 ; |fourBitALU|C~18                                                                ; out              ;
+; |fourBitALU|C~19                                                                 ; |fourBitALU|C~19                                                                ; out              ;
+; |fourBitALU|C~21                                                                 ; |fourBitALU|C~21                                                                ; out              ;
+; |fourBitALU|C~22                                                                 ; |fourBitALU|C~22                                                                ; out              ;
+; |fourBitALU|C~25                                                                 ; |fourBitALU|C~25                                                                ; out0             ;
+; |fourBitALU|C~26                                                                 ; |fourBitALU|C~26                                                                ; out0             ;
+; |fourBitALU|ZF~8                                                                 ; |fourBitALU|ZF~8                                                                ; out              ;
+; |fourBitALU|ZF~9                                                                 ; |fourBitALU|ZF~9                                                                ; out              ;
+; |fourBitALU|ZF~10                                                                ; |fourBitALU|ZF~10                                                               ; out              ;
+; |fourBitALU|ZF~11                                                                ; |fourBitALU|ZF~11                                                               ; out              ;
+; |fourBitALU|C~40                                                                 ; |fourBitALU|C~40                                                                ; out              ;
+; |fourBitALU|count~0                                                              ; |fourBitALU|count~0                                                             ; out              ;
+; |fourBitALU|C~42                                                                 ; |fourBitALU|C~42                                                                ; out              ;
+; |fourBitALU|C~43                                                                 ; |fourBitALU|C~43                                                                ; out              ;
+; |fourBitALU|count~4                                                              ; |fourBitALU|count~4                                                             ; out              ;
+; |fourBitALU|count~6                                                              ; |fourBitALU|count~6                                                             ; out              ;
+; |fourBitALU|C~45                                                                 ; |fourBitALU|C~45                                                                ; out              ;
+; |fourBitALU|C~46                                                                 ; |fourBitALU|C~46                                                                ; out              ;
+; |fourBitALU|count~8                                                              ; |fourBitALU|count~8                                                             ; out              ;
+; |fourBitALU|C~49                                                                 ; |fourBitALU|C~49                                                                ; out              ;
+; |fourBitALU|C~50                                                                 ; |fourBitALU|C~50                                                                ; out              ;
+; |fourBitALU|car~8                                                                ; |fourBitALU|car~8                                                               ; out              ;
+; |fourBitALU|count~13                                                             ; |fourBitALU|count~13                                                            ; out              ;
+; |fourBitALU|CF~8                                                                 ; |fourBitALU|CF~8                                                                ; out              ;
+; |fourBitALU|C~53                                                                 ; |fourBitALU|C~53                                                                ; out              ;
+; |fourBitALU|C~54                                                                 ; |fourBitALU|C~54                                                                ; out              ;
+; |fourBitALU|count~18                                                             ; |fourBitALU|count~18                                                            ; out              ;
+; |fourBitALU|CF~reg0                                                              ; |fourBitALU|CF~reg0                                                             ; regout           ;
+; |fourBitALU|car~9                                                                ; |fourBitALU|car~9                                                               ; out              ;
+; |fourBitALU|CF~9                                                                 ; |fourBitALU|CF~9                                                                ; out              ;
+; |fourBitALU|C~57                                                                 ; |fourBitALU|C~57                                                                ; out              ;
+; |fourBitALU|C~58                                                                 ; |fourBitALU|C~58                                                                ; out              ;
+; |fourBitALU|car~10                                                               ; |fourBitALU|car~10                                                              ; out              ;
+; |fourBitALU|count~23                                                             ; |fourBitALU|count~23                                                            ; out              ;
+; |fourBitALU|CF~10                                                                ; |fourBitALU|CF~10                                                               ; out              ;
+; |fourBitALU|C~61                                                                 ; |fourBitALU|C~61                                                                ; out              ;
+; |fourBitALU|C~62                                                                 ; |fourBitALU|C~62                                                                ; out              ;
+; |fourBitALU|count~28                                                             ; |fourBitALU|count~28                                                            ; out              ;
+; |fourBitALU|car~11                                                               ; |fourBitALU|car~11                                                              ; out              ;
+; |fourBitALU|CF~11                                                                ; |fourBitALU|CF~11                                                               ; out              ;
+; |fourBitALU|count~33                                                             ; |fourBitALU|count~33                                                            ; out              ;
+; |fourBitALU|C~65                                                                 ; |fourBitALU|C~65                                                                ; out              ;
+; |fourBitALU|C~66                                                                 ; |fourBitALU|C~66                                                                ; out              ;
+; |fourBitALU|CF~12                                                                ; |fourBitALU|CF~12                                                               ; out              ;
+; |fourBitALU|car~12                                                               ; |fourBitALU|car~12                                                              ; out              ;
+; |fourBitALU|count~38                                                             ; |fourBitALU|count~38                                                            ; out              ;
+; |fourBitALU|car                                                                  ; |fourBitALU|car                                                                 ; regout           ;
+; |fourBitALU|C[1]~reg0                                                            ; |fourBitALU|C[1]~reg0                                                           ; regout           ;
+; |fourBitALU|C[2]~reg0                                                            ; |fourBitALU|C[2]~reg0                                                           ; regout           ;
+; |fourBitALU|count.000                                                            ; |fourBitALU|count.000                                                           ; regout           ;
+; |fourBitALU|Reset                                                                ; |fourBitALU|Reset                                                               ; out              ;
+; |fourBitALU|B[0]                                                                 ; |fourBitALU|B[0]                                                                ; out              ;
+; |fourBitALU|OPcode[0]                                                            ; |fourBitALU|OPcode[0]                                                           ; out              ;
+; |fourBitALU|OPcode[1]                                                            ; |fourBitALU|OPcode[1]                                                           ; out              ;
+; |fourBitALU|C[1]                                                                 ; |fourBitALU|C[1]                                                                ; pin_out          ;
+; |fourBitALU|C[2]                                                                 ; |fourBitALU|C[2]                                                                ; pin_out          ;
+; |fourBitALU|CF                                                                   ; |fourBitALU|CF                                                                  ; pin_out          ;
+; |fourBitALU|Equal1~4                                                             ; |fourBitALU|Equal1~4                                                            ; out0             ;
+; |fourBitALU|Equal5~4                                                             ; |fourBitALU|Equal5~4                                                            ; out0             ;
+; |fourBitALU|Equal7~4                                                             ; |fourBitALU|Equal7~4                                                            ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[0]~0                      ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[0]~0                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[0]                        ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[0]                       ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~0                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~0                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~2                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~2                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~3                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~3                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[1]~1                      ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[1]~1                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[1]                        ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|datab_node[1]                       ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~4                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~4                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~6                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~6                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~7                                  ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|_~7                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add13|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |fourBitALU|lpm_add_sub:Add13|addcore:adder|a_csnbuffer:result_node|cout[0]     ; cout             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[0]~0                      ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[0]~0                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~2                                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~2                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[1]~1                      ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[1]~1                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[1]                        ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|datab_node[1]                       ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|unreg_res_node[1]~1                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|unreg_res_node[1]~1                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~4                                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~4                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~5                                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~5                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~6                                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~6                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~7                                  ; |fourBitALU|lpm_add_sub:Add12|addcore:adder|_~7                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[0]~0                      ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[0]~0                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[0]                        ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[0]                       ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~0                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~0                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~2                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~2                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~3                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~3                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[1]~1                      ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[1]~1                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[1]                        ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|datab_node[1]                       ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~4                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~4                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~6                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~6                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~7                                  ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|_~7                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add11|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |fourBitALU|lpm_add_sub:Add11|addcore:adder|a_csnbuffer:result_node|cout[0]     ; cout             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[0]~0                      ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[0]~0                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~2                                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~2                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[1]~1                      ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[1]~1                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[1]                        ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|datab_node[1]                       ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|unreg_res_node[1]~1                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|unreg_res_node[1]~1                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~4                                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~4                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~5                                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~5                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~6                                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~6                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~7                                  ; |fourBitALU|lpm_add_sub:Add10|addcore:adder|_~7                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[1]~1                       ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[1]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add9|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add9|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[1]~1                       ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[1]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|unreg_res_node[1]~1                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|unreg_res_node[1]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~5                                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~5                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add8|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|result_node[1]                                      ; |fourBitALU|lpm_add_sub:Add7|result_node[1]                                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[1]~1                       ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[1]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|unreg_res_node[1]~1                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|unreg_res_node[1]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|unreg_res_node[1]                     ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~5                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~5                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |fourBitALU|lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~9                                   ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~9                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~11                                  ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|_~11                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]~1                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|unreg_res_node[2]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~9                                   ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~9                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~11                                  ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|_~11                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]~1                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|unreg_res_node[2]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~9                                   ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~9                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~11                                  ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|_~11                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~1                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add0|result_node[2]                                      ; |fourBitALU|lpm_add_sub:Add0|result_node[2]                                     ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                       ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]                         ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                     ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~0                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~0                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~1                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~1                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~2                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~2                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~3                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~3                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[2]~1                       ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[2]~1                      ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[2]                         ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[1]                         ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~1                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~1                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                     ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~4                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~4                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~6                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~6                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~7                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~7                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~8                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~8                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~9                                   ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~9                                  ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~10                                  ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~10                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~11                                  ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|_~11                                 ; out0             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |fourBitALU|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
++----------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Sun Apr 16 08:53:44 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off fourBitALU -c fourBitALU
+Info: Using vector source file "D:/Downloads/Group 5/fourBitALU.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 50.0 ns on register "|fourBitALU|ZF~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 60.0 ns on register "|fourBitALU|C[0]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 100.0 ns on register "|fourBitALU|SF~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 100.0 ns on register "|fourBitALU|C[3]~reg0"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      52.27 %
+Info: Number of transitions in simulation is 1510
+Info: Quartus II Simulator was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 153 megabytes
+    Info: Processing ended: Sun Apr 16 08:53:44 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
